@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NILO Luxury Spa | Belleza y Bienestar</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bronce: '#4B3621',
+                        beige: '#F5EADD',
+                        oro: '#DAA520',
+                        rosa: '#FADADD',
+                        oscuro: '#2C1D0C'
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['Montserrat', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-beige text-bronce font-sans antialiased selection:bg-rosa selection:text-bronce relative">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-beige/95 backdrop-blur-md border-b border-bronce/10 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <a href="#" class="flex items-center">
+                    <img src="https://i.ibb.co/GfcszRBt/Dise-o-sin-t-tulo-38.png" alt="Nilo Luxury Spa Logo" class="h-14 sm:h-16 w-auto object-contain">
+                </a>
+            </div>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide">
+                <a href="#paquetes" class="hover:text-oro transition-colors">Paquetes</a>
+                <a href="#masajes" class="hover:text-oro transition-colors">Masajes</a>
+                <a href="#faciales" class="hover:text-oro transition-colors">Faciales</a>
+                <a href="#reductivos" class="hover:text-oro transition-colors">Reductivos & Post-Op</a>
+                <a href="#fajas" class="hover:text-oro transition-colors">Fajas y más</a>
+            </nav>
+            <div>
+                <a href="https://wa.me/528445607182?text=Hola,%20deseo%20agendar%20una%20cita%20en%20Nilo%20Luxury%20Spa" target="_blank" class="bg-bronce text-beige px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold tracking-wider hover:bg-oro hover:text-bronce transition-all shadow-md flex items-center gap-2">
+                    <i class="fab fa-whatsapp text-base"></i> Agendar Cita
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-b from-beige via-rosa/20 to-beige py-20 lg:py-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <span class="inline-block uppercase tracking-[0.25em] text-xs font-semibold text-oro mb-4 bg-white/60 px-4 py-1.5 rounded-full shadow-sm">
+                Exclusividad y Confort
+            </span>
+            <h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-bronce mb-6">
+                Belleza que se siente, <br><span class="italic font-normal text-oro">bienestar que se vive</span>
+            </h1>
+            <p class="max-w-2xl mx-auto text-base sm:text-lg text-bronce/80 mb-10 font-light leading-relaxed">
+                Sumérgete en un espacio diseñado para renovar tus sentidos. Disfruta de masajes especializados, tratamientos faciales avanzados y cuidado corporal integral.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#paquetes" class="bg-bronce text-beige px-8 py-3.5 rounded-full font-medium hover:bg-oro hover:text-bronce transition-all shadow-lg">
+                    Ver Promociones y Paquetes
+                </a>
+                <a href="https://wa.me/528445607182" target="_blank" class="border border-bronce text-bronce px-8 py-3.5 rounded-full font-medium hover:bg-bronce hover:text-beige transition-all">
+                    Contactar por WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Paquetes Especiales -->
+    <section id="paquetes" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-bronce mb-4">Paquetes Especiales & Experiencias</h2>
+                <div class="w-16 h-0.5 bg-oro mx-auto mb-4"></div>
+                <p class="text-bronce/70">Regálate o comparte momentos inolvidables de relajación profunda.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Paquete Pareja -->
+                <div class="bg-beige/60 rounded-2xl p-6 border border-bronce/10 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+                    <div>
+                        <img src="https://i.ibb.co/HfB9vJ3B/Dise-o-sin-t-tulo-54.png" alt="Paquete Pareja" class="aspect-square w-full object-cover rounded-xl mb-6 border border-bronce/5">
+                        <div class="text-oro font-semibold text-xs tracking-widest uppercase mb-2">Más Popular</div>
+                        <h3 class="font-serif text-2xl font-bold text-bronce mb-2">Paquete Pareja</h3>
+                        <div class="text-3xl font-bold text-bronce mb-4">$1,300 <span class="text-sm font-normal text-bronce/70">/ 2 personas</span></div>
+                        <p class="text-sm text-bronce/80 mb-6">Duración aprox. 1 hr 30 min de masaje y facial.</p>
+                        <ul class="space-y-3 text-sm text-bronce/90 mb-8">
+                            <li class="flex items-start gap-2"><i class="fas fa-check text-oro mt-1"></i> Masaje antiestrés en pareja (Piedras calientes, pindas aromáticas, sacos de calor).</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check text-oro mt-1"></i> Facial orgánico de regalo con limpieza y mascarilla según tipo de piel.</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check text-oro mt-1"></i> Gift card de regalo y bebida de cortesía (Vino o aperitivo).</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/528445607182?text=Hola,%20me%20interesa%20el%20Paquete%20Pareja" target="_blank" class="w-full bg-bronce text-beige text-center py-3 rounded-xl font-medium hover:bg-oro hover:text-bronce transition-colors">Reservar Paquete</a>
+                </div>
+
+                <!-- Mamá e Hija -->
+                <div class="bg-beige/60 rounded-2xl p-6 border border-bronce/10 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+                    <div>
+                        <img src="https://i.ibb.co/tw8vH0cN/Dise-o-sin-t-tulo-53.png" alt="Mamá e Hija Spa Day" class="aspect-square w-full object-cover rounded-xl mb-6 border border-bronce/5">
+                        <div class="text-oro font-semibold text-xs tracking-widest uppercase mb-2">Conexión Familiar</div>
+                        <h3 class="font-serif text-2xl font-bold text-bronce mb-2">Mamá e Hija Spa Day</h3>
+                        <div class="text-2xl font-bold text-bronce mb-4">Momento de Relax</div>
+                        <p class="text-sm text-bronce/80 mb-6">Duración aprox. 1 hr 20 min.</p>
+                        <ul class="space-y-3 text-sm text-bronce/90 mb-8">
+                            <li class="flex items-start gap-2"><i class="fas fa-check text-oro mt-1"></i> Masaje antiestrés especializado para mamá e hija.</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check text-oro mt-1"></i> Maderoterapia, sonoterapia y masaje manual.</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check text-oro mt-1"></i> Uso de piedras calientes.</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check text-oro mt-1"></i> <strong>Brunch de regalo</strong> incluido.</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/528445607182?text=Hola,%20me%20interesa%20el%20Mamá%20e%20Hija%20Spa%20Day" target="_blank" class="w-full bg-bronce text-beige text-center py-3 rounded-xl font-medium hover:bg-oro hover:text-bronce transition-colors">Reservar Paquete</a>
+                </div>
+
+                <!-- Paquete Bride -->
+                <div class="bg-beige/60 rounded-2xl p-6 border border-bronce/10 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+                    <div>
+                        <img src="https://i.ibb.co/fVhG9fgc/Dise-o-sin-t-tulo-37.png" alt="Paquete Bride" class="aspect-square w-full object-cover rounded-xl mb-6 border border-bronce/5">
+                        <div class="text-oro font-semibold text-xs tracking-widest uppercase mb-2">Novias</div>
+                        <h3 class="font-serif text-2xl font-bold text-bronce mb-2">Paquete Bride</h3>
+                        <div class="text-2xl font-bold text-bronce mb-4">Esencia de Novia</div>
+                        <p class="text-sm text-bronce/80 mb-6">Bríndate descanso, luminosidad y frescura antes del gran día.</p>
+                        <ul class="space-y-3 text-sm text-bronce/90 mb-8">
+                            <li class="flex items-start gap-2"><i class="fas fa-check text-oro mt-1"></i> Limpieza facial profunda con hidratación intensiva.</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check text-oro mt-1"></i> Exfoliación suave en espalda.</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check text-oro mt-1"></i> Masaje relajante corporal con aromaterapia.</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/528445607182?text=Hola,%20me%20interesa%20el%20Paquete%20Bride" target="_blank" class="w-full bg-bronce text-beige text-center py-3 rounded-xl font-medium hover:bg-oro hover:text-bronce transition-colors">Reservar Paquete</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Masajes -->
+    <section id="masajes" class="py-20 bg-beige/40 border-t border-bronce/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-oro font-semibold text-xs tracking-widest uppercase">Renovación Profunda</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-bronce mt-2 mb-4">Masajes Especializados</h2>
+                <div class="w-16 h-0.5 bg-oro mx-auto mb-4"></div>
+                <p class="text-bronce/70">Libera tensiones, alivia el estrés y encuentra el equilibrio perfecto para cuerpo y mente.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+                <!-- Lado Izquierdo: Masaje Prenatal -->
+                <div class="bg-white p-8 sm:p-10 rounded-3xl border border-bronce/10 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="text-oro font-semibold text-xs tracking-widest uppercase mb-1">Mamá y Bebé</div>
+                        <h3 class="font-serif text-2xl sm:text-3xl font-bold text-bronce mb-4">Masaje Prenatal</h3>
+                        <p class="text-sm sm:text-base text-bronce/80 mb-4 leading-relaxed">
+                            El embarazo trae hermosos momentos, pero también incomodidades como dolor de espalda, piernas cansadas y retención de líquidos provocando edema – “hinchazón” en piernas, pies y manos. ¡Aquí es donde el masaje prenatal se convierte en tu mejor aliado!
+                        </p>
+                        <div class="bg-beige/60 p-4 rounded-xl mb-4 text-xs sm:text-sm text-bronce/90">
+                            <em>* Sujeto a previa valoración y aprobación de tu gine, obtendrás lo siguiente:</em>
+                        </div>
+                        <ul class="space-y-2.5 text-sm text-bronce/90 mb-6">
+                            <li><i class="fas fa-check text-oro mr-3"></i> <strong>Disminuye</strong> dolor de espalda y tensión muscular.</li>
+                            <li><i class="fas fa-check text-oro mr-3"></i> <strong>Mejora</strong> la calidad del sueño y reduce el estrés.</li>
+                            <li><i class="fas fa-check text-oro mr-3"></i> <strong>Favorece</strong> la circulación y disminuye el edema - hinchazón.</li>
+                            <li><i class="fas fa-check text-oro mr-3"></i> <strong>Prepara</strong> tu cuerpo para el parto de manera más relajada.</li>
+                        </ul>
+                        <p class="text-xs sm:text-sm text-bronce/80 italic mb-6">
+                            En NILO luxury SPA, te ofrecemos un momento de paz, relajación y bienestar diseñado especialmente para ti y tu bebé. ¡Regálate este tiempo para ti! <strong>Porque una mamá relajada es un bebé feliz</strong>
+                        </p>
+                    </div>
+                    <a href="https://wa.me/528445607182?text=Hola,%20me%20interesa%20agendar%20un%20Masaje%20Prenatal" target="_blank" class="w-full bg-bronce text-beige text-center py-4 rounded-xl font-medium hover:bg-oro hover:text-bronce transition-colors text-sm sm:text-base shadow-sm">
+                        Agendar Masaje Prenatal
+                    </a>
+                </div>
+
+                <!-- Lado Derecho: Masaje Descontracturante y Relajante -->
+                <div class="flex flex-col gap-8 justify-between">
+                    <!-- Masaje Descontracturante -->
+                    <div class="bg-white p-6 sm:p-8 rounded-3xl border border-bronce/10 shadow-sm flex flex-col justify-between flex-1">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="w-10 h-10 rounded-2xl bg-oro/20 flex items-center justify-center text-oro text-lg">
+                                    <i class="fas fa-hands-asl-interpreting"></i>
+                                </div>
+                                <span class="text-oro font-semibold text-xs tracking-widest uppercase">Alivio Profundo</span>
+                            </div>
+                            <h3 class="font-serif text-xl sm:text-2xl font-bold text-bronce mb-2">Masaje Descontracturante</h3>
+                            <p class="text-xs sm:text-sm text-bronce/80 mb-4 leading-relaxed">
+                                Especial para liberar tensiones severas y contracturas acumuladas por el estrés diario o malas posturas, trabajando directamente sobre los nudos musculares.
+                            </p>
+                            <ul class="space-y-1.5 text-xs text-bronce/90 mb-6">
+                                <li><i class="fas fa-check text-oro mr-2"></i> Alivia dolores musculares intensos</li>
+                                <li><i class="fas fa-check text-oro mr-2"></i> Restaura la movilidad corporal</li>
+                            </ul>
+                        </div>
+                        <a href="https://wa.me/528445607182?text=Hola,%20me%20interesa%20agendar%20un%20Masaje%20Descontracturante" target="_blank" class="w-full bg-bronce text-beige text-center py-2.5 rounded-xl font-medium hover:bg-oro hover:text-bronce transition-colors text-xs sm:text-sm">
+                            Agendar Descontracturante
+                        </a>
+                    </div>
+
+                    <!-- Relajante & Cierre de Costillas -->
+                    <div class="bg-white p-6 sm:p-8 rounded-3xl border border-bronce/10 shadow-sm flex flex-col justify-between flex-1">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="w-10 h-10 rounded-2xl bg-oro/20 flex items-center justify-center text-oro text-lg">
+                                    <i class="fas fa-feather-alt"></i>
+                                </div>
+                                <span class="text-oro font-semibold text-xs tracking-widest uppercase">Bienestar & Postparto</span>
+                            </div>
+                            <h3 class="font-serif text-xl sm:text-2xl font-bold text-bronce mb-2">Relajante & Cierre de Costillas</h3>
+                            <p class="text-xs sm:text-sm text-bronce/80 mb-4 leading-relaxed">
+                                Disfruta de un masaje relajante general o combínalo con técnicas especializadas de cierre de costillas ideales para realinear la postura y recuperar la figura tras el parto.
+                            </p>
+                            <ul class="space-y-1.5 text-xs text-bronce/90 mb-6">
+                                <li><i class="fas fa-check text-oro mr-2"></i> Relajación mental y física total</li>
+                                <li><i class="fas fa-check text-oro mr-2"></i> Ideal para recuperación postparto</li>
+                            </ul>
+                        </div>
+                        <a href="https://wa.me/528445607182?text=Hola,%20me%20interesa%20agendar%20un%20Masaje%20Relajante%20o%20Cierre%20de%20Costillas" target="_blank" class="w-full bg-bronce text-beige text-center py-2.5 rounded-xl font-medium hover:bg-oro hover:text-bronce transition-colors text-xs sm:text-sm">
+                            Agendar Relajante / Cierre de Costillas
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tratamientos Faciales & Promociones -->
+    <section id="faciales" class="py-20 bg-beige/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-oro font-semibold text-xs tracking-widest uppercase">Cuidado Avanzado</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-bronce mt-2 mb-6">Limpieza Facial Profunda</h2>
+                    <p class="text-bronce/80 mb-6 leading-relaxed">
+                        Obtén una apariencia más joven. Se recomienda una limpieza facial al mes para oxigenar, retrasar la aparición de arrugas, eliminar puntos negros y lucir una piel radiante y tersa.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8 text-sm">
+                        <div class="bg-white p-4 rounded-xl shadow-sm"><i class="fas fa-spa text-oro mr-2"></i> Vapor con ozono</div>
+                        <div class="bg-white p-4 rounded-xl shadow-sm"><i class="fas fa-spa text-oro mr-2"></i> Microdermoabrasión</div>
+                        <div class="bg-white p-4 rounded-xl shadow-sm"><i class="fas fa-spa text-oro mr-2"></i> Alta frecuencia</div>
+                        <div class="bg-white p-4 rounded-xl shadow-sm"><i class="fas fa-spa text-oro mr-2"></i> Radiofrecuencia</div>
+                        <div class="bg-white p-4 rounded-xl shadow-sm"><i class="fas fa-spa text-oro mr-2"></i> Mascarilla de colágeno</div>
+                        <div class="bg-white p-4 rounded-xl shadow-sm"><i class="fas fa-spa text-oro mr-2"></i> Protector solar</div>
+                    </div>
+                </div>
+               <!-- Sección de Promoción de Faciales Actualizada -->
+<div class="bg-bronce text-beige p-8 sm:p-10 rounded-3xl shadow-xl relative overflow-hidden">
+    <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-oro/20 rounded-full blur-2xl"></div>
+    <span class="bg-oro text-bronce text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest">Promoción Sábados y Domingos</span>
+    <h3 class="font-serif text-3xl font-bold mt-4 mb-2">Precios Especiales en Faciales</h3>
+    <p class="text-beige/80 text-sm mb-6">Cuida tu piel, ahorra y brilla con nuestros precios especiales de fin de semana.</p>
+    <div class="bg-white/10 rounded-2xl p-6 backdrop-blur-sm mb-6 space-y-4">
+        <div class="flex justify-between items-center border-b border-white/10 pb-3">
+            <span>1 Facial</span>
+            <span class="font-bold text-oro text-lg">$500</span>
+        </div>
+        <div class="flex justify-between items-center">
+            <span>2 Faciales</span>
+            <span class="font-bold text-oro text-lg">$700</span>
+        </div>
+    </div>
+    <a href="https://wa.me/528445607182?text=Hola,%20quiero%20aprovechar%20la%20promoción%20de%20faciales%20de%20fin%20de%20semana" target="_blank" class="block text-center bg-oro text-bronce font-semibold py-3.5 rounded-xl hover:bg-beige transition-colors">
+        Apartar Promoción
+    </a>
+</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRATAMIENTOS REDUCTIVOS (IZQUIERDA) & POST-OPERATORIO (DERECHA) - LIMPIOS DE EMOJIS Y ACTUALIZADOS -->
+    <section id="reductivos" class="py-20 bg-white border-t border-bronce/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-oro font-semibold text-xs tracking-widest uppercase">Resultados Reales</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-bronce mt-2 mb-4">Reductivos & Post-Operatorios</h2>
+                <div class="w-16 h-0.5 bg-oro mx-auto mb-4"></div>
+                <p class="text-bronce/70">Moldea tu figura o asegura una recuperación exitosa con nuestros tratamientos especializados.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+                <!-- Columna Izquierda: Plan Reductor Linfático -->
+                <div class="bg-beige/60 p-8 sm:p-10 rounded-3xl border border-bronce/10 flex flex-col justify-between shadow-sm relative overflow-hidden">
+                    <div class="absolute -right-10 -top-10 w-32 h-32 bg-oro/10 rounded-full blur-xl"></div>
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <span class="bg-oro text-bronce text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider inline-block mb-2">Promoción Disponible</span>
+                                <h3 class="font-serif text-2xl sm:text-3xl font-bold text-bronce">Plan Reductor Linfático</h3>
+                            </div>
+                            <span class="bg-bronce text-beige text-xs font-bold px-3.5 py-1.5 rounded-full whitespace-nowrap">Desde $1,800</span>
+                        </div>
+                        
+                        <p class="text-xs sm:text-sm text-bronce/90 mb-5 font-semibold italic">
+                            Incluye plan de alimentación y bebida detox personalizada.
+                        </p>
+
+                        <!-- Precios de Paquetes -->
+                        <div class="bg-white p-5 rounded-2xl border border-bronce/10 mb-6 space-y-2.5 text-sm">
+                            <div class="text-[11px] uppercase tracking-wider text-oro font-bold mb-1">Paquetes Disponibles (5, 7 y 12 Sesiones)</div>
+                            <div class="flex justify-between items-center border-b border-bronce/5 pb-2">
+                                <span class="font-semibold text-bronce">5 Sesiones</span>
+                                <span class="font-bold text-oro text-base">$1,800</span>
+                            </div>
+                            <div class="flex justify-between items-center border-b border-bronce/5 pb-2">
+                                <span class="font-semibold text-bronce">7 Sesiones</span>
+                                <span class="font-bold text-oro text-base">$1,950</span>
+                            </div>
+                            <div class="flex justify-between items-center pt-1">
+                                <span class="font-semibold text-bronce">12 Sesiones</span>
+                                <span class="font-bold text-oro text-base">$2,400</span>
+                            </div>
+                        </div>
+
+                        <!-- Lo que incluye -->
+                        <div class="mb-6">
+                            <div class="text-xs font-bold uppercase tracking-wider text-bronce mb-3">Técnicas y Procedimientos Incluidos:</div>
+                            <ul class="text-xs sm:text-sm text-bronce/95 space-y-2">
+                                <li class="flex items-start gap-2"><i class="fas fa-check text-oro mt-1"></i> Masaje reductor + Moldeo de cintura + Marcaje colombiano</li>
+                                <li class="flex items-start gap-2"><i class="fas fa-check text-oro mt-1"></i> Cavitación y Electroterapia</li>
+                                <li class="flex items-start gap-2"><i class="fas fa-check text-oro mt-1"></i> Maderoterapia corporal</li>
+                                <li class="flex items-start gap-2"><i class="fas fa-check text-oro mt-1"></i> Masaje linfático / Cierre de costillas</li>
+                                <li class="flex items-start gap-2"><i class="fas fa-check text-oro mt-1"></i> Masaje manual colombiano y geles reafirmantes</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/528445607182?text=Hola,%20quiero%20apartar%20mi%20paquete%20del%20Plan%20Reductor%20Linfático" target="_blank" class="w-full bg-bronce text-beige text-center py-3.5 rounded-xl font-medium hover:bg-oro hover:text-bronce transition-colors text-sm sm:text-base shadow-sm">
+                        Apartar Paquete Reductivo
+                    </a>
+                </div>
+
+                <!-- Columna Derecha: Paquete Post-Operatorio (Actualizado al Banner Oficial) -->
+                <div class="bg-beige/60 p-8 sm:p-10 rounded-3xl border border-bronce/10 flex flex-col justify-between shadow-sm">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <span class="text-xs font-semibold uppercase text-oro tracking-wider">Recuperación Segura</span>
+                                <h3 class="font-serif text-2xl sm:text-3xl font-bold text-bronce mt-1">Paquete Post-Operatorio</h3>
+                            </div>
+                            <span class="bg-oro/25 text-bronce font-bold text-xs px-3.5 py-1.5 rounded-full">10 Visitas</span>
+                        </div>
+                        
+                        <p class="text-xs sm:text-sm text-bronce/90 mb-5 font-semibold">
+                            Duración por visita: 1 hora 40 minutos. Atención personalizada y resultados reales.
+                        </p>
+
+                        <!-- Beneficios / Qué logra -->
+                        <div class="bg-white p-5 rounded-2xl border border-bronce/10 mb-6">
+                            <div class="text-[11px] uppercase tracking-wider text-oro font-bold mb-2">Beneficios del Tratamiento:</div>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs sm:text-sm text-bronce/90">
+                                <div><i class="fas fa-check text-oro mr-2"></i> Desinflamar</div>
+                                <div><i class="fas fa-check text-oro mr-2"></i> Aminorar dolor</div>
+                                <div><i class="fas fa-check text-oro mr-2"></i> Desvanecer hematomas (moretones)</div>
+                                <div><i class="fas fa-check text-oro mr-2"></i> Marcar más cintura</div>
+                                <div><i class="fas fa-check text-oro mr-2"></i> Reafirmar piel / prevenir flacidez</div>
+                                <div><i class="fas fa-check text-oro mr-2"></i> Prevenir formación de fibrosis</div>
+                            </div>
+                        </div>
+
+                        <!-- Qué incluye (Tecnologías) -->
+                        <div class="mb-6">
+                            <div class="text-xs font-bold uppercase tracking-wider text-bronce mb-3">¿Qué incluye? (Según valoración de cirugía):</div>
+                            <ul class="text-xs sm:text-sm text-bronce/95 space-y-2">
+                                <li class="flex items-start gap-2"><i class="fas fa-check text-oro mt-1"></i> Masaje de Drenaje Linfático</li>
+                                <li class="flex items-start gap-2"><i class="fas fa-check text-oro mt-1"></i> Radiofrecuencia</li>
+                                <li class="flex items-start gap-2"><i class="fas fa-check text-oro mt-1"></i> Cavitación, Ultrasonido ó Lipoláser</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/528445607182?text=Hola,%20me%20interesa%20el%20Paquete%20Post-Operatorio" target="_blank" class="w-full bg-bronce text-beige text-center py-3.5 rounded-xl font-medium hover:bg-oro hover:text-bronce transition-colors text-sm sm:text-base">
+                        Consultar Post-Operatorio
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fajas, Cuidado Íntimo y Exfoliación de Espalda -->
+    <section id="fajas" class="py-16 bg-beige/50 border-t border-bronce/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-oro font-semibold text-xs tracking-widest uppercase">Nilo Luxury Spa</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-bronce mt-2 mb-3">Fajas y más</h2>
+                <div class="w-16 h-0.5 bg-oro mx-auto mb-3"></div>
+                <p class="text-bronce/70 text-sm">Tecnología, estética y cuidado especializado para ti.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Tarjeta Fajas Moldeadoras -->
+                <div class="bg-white p-6 rounded-3xl border border-bronce/10 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+                    <div>
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="w-8 h-8 rounded-full bg-oro/20 flex items-center justify-center text-oro text-sm">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <span class="text-[11px] font-semibold uppercase text-oro tracking-wider">Estética & Figura</span>
+                        </div>
+                        <h3 class="font-serif text-xl font-bold text-bronce mb-2">Fajas Moldeadoras</h3>
+                        <p class="text-xs sm:text-sm text-bronce/80 mb-4 leading-relaxed">
+                            Encuentra la faja ideal para moldear tu figura con máxima comodidad y modelos variados:
+                        </p>
+                        <div class="grid grid-cols-2 gap-2 text-[11px] text-bronce/90 mb-5">
+                            <div class="bg-beige/60 p-2 rounded-xl border border-bronce/5"><i class="fas fa-check text-oro mr-1"></i> Completas</div>
+                            <div class="bg-beige/60 p-2 rounded-xl border border-bronce/5"><i class="fas fa-check text-oro mr-1"></i> Bóxer levanta pompi</div>
+                            <div class="bg-beige/60 p-2 rounded-xl border border-bronce/5"><i class="fas fa-check text-oro mr-1"></i> Cinturillas extremas</div>
+                            <div class="bg-beige/60 p-2 rounded-xl border border-bronce/5"><i class="fas fa-check text-oro mr-1"></i> Shorts y Leggings</div>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/528445607182?text=Hola,%20necesito%20asesoría%20sobre%20las%20fajas%20y%20tallas" target="_blank" class="w-full bg-bronce text-beige text-center py-2.5 rounded-xl font-medium hover:bg-oro hover:text-bronce transition-colors text-xs shadow-sm">
+                        Cotizar Faja por WhatsApp
+                    </a>
+                </div>
+
+                <!-- Tarjeta Vagispa -->
+                <div class="bg-white p-6 rounded-3xl border border-bronce/10 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+                    <div>
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="w-8 h-8 rounded-full bg-oro/20 flex items-center justify-center text-oro text-sm">
+                                <i class="fas fa-spa"></i>
+                            </div>
+                            <span class="text-[11px] font-semibold uppercase text-oro tracking-wider">Bienestar Íntimo</span>
+                        </div>
+                        <h3 class="font-serif text-xl font-bold text-bronce mb-2">Vagispa (Cuidado Íntimo)</h3>
+                        <p class="text-xs sm:text-sm text-bronce/80 mb-4 leading-relaxed">
+                            Tratamiento delicado diseñado para la hidratación, descongestión y relajación de la zona íntima.
+                        </p>
+                        <ul class="space-y-2 text-xs text-bronce/90 mb-5">
+                            <li class="flex items-start gap-2"><i class="fas fa-check text-oro mt-0.5"></i> Hidratación y nutrición profunda</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check text-oro mt-0.5"></i> Vaporizaciones herbales relajantes</li>
+                            <li class="flex items-start gap-2"><i class="fas fa-check text-oro mt-0.5"></i> Sesión privada y segura</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/528445607182?text=Hola,%20deseo%20más%20información%20sobre%20el%20servicio%20de%20Vagispa" target="_blank" class="w-full bg-bronce text-beige text-center py-2.5 rounded-xl font-medium hover:bg-oro hover:text-bronce transition-colors text-xs shadow-sm">
+                        Agendar Cita de Vagispa
+                    </a>
+                </div>
+
+                <!-- Tarjeta Exfoliación de Espalda -->
+                <div class="bg-white p-6 rounded-3xl border border-bronce/10 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+                    <div>
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="w-8 h-8 rounded-full bg-oro/20 flex items-center justify-center text-oro text-sm">
+                                <i class="fas fa-feather-alt"></i>
+                            </div>
+                            <span class="text-[11px] font-semibold uppercase text-oro tracking-wider">Cuidado Corporal</span>
+                        </div>
+                        <h3 class="font-serif text-xl font-bold text-bronce mb-2">Exfoliación de Espalda</h3>
+                        <p class="text-xs sm:text-sm text-bronce/80 mb-4 leading-relaxed">
+                            Ayuda a eliminar células muertas, limpiar poros y dejar la piel más suave, uniforme y luminosa.
+                        </p>
+                        <ul class="space-y-1.5 text-xs text-bronce/90 mb-5">
+                            <li><i class="fas fa-check text-oro mr-1.5"></i> Remueve células muertas e impurezas</li>
+                            <li><i class="fas fa-check text-oro mr-1.5"></i> Suaviza y mejora la textura</li>
+                            <li><i class="fas fa-check text-oro mr-1.5"></i> Sensación de frescura y relajación</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/528445607182?text=Hola,%20me%20interesa%20agendar%20la%20Exfoliación%20de%20Espalda" target="_blank" class="w-full bg-bronce text-beige text-center py-2.5 rounded-xl font-medium hover:bg-oro hover:text-bronce transition-colors text-xs shadow-sm">
+                        Agendar Exfoliación de Espalda
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Ubicación de 3 Columnas -->
+    <section class="py-20 bg-beige/40 border-t border-bronce/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-oro font-semibold text-xs tracking-widest uppercase">Encuéntranos</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-bronce mt-2 mb-4">Visítanos en Nilo</h2>
+                <div class="w-16 h-0.5 bg-oro mx-auto mb-4"></div>
+                <p class="text-bronce/70">Ven a conocernos y vive la experiencia Nilo Luxury Spa.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+                <!-- Columna 1: Información y Contacto -->
+                <div class="bg-white p-8 rounded-3xl border border-bronce/10 shadow-sm h-full flex flex-col justify-between">
+                    <div>
+                        <h3 class="font-serif text-2xl font-bold text-bronce mb-4">Información & Contacto</h3>
+                        <div class="space-y-4 mb-6 text-sm text-bronce">
+                            <div class="flex items-start gap-3">
+                                <i class="fas fa-map-marker-alt text-oro mt-1 text-base"></i>
+                                <div>
+                                    <strong class="block font-semibold">Dirección:</strong>
+                                    <span class="text-bronce/80">Calle Mariano Abasolo 3791-Planta Baja, Alpes, 25270 Saltillo, Coah. <br>Saltillo, Coah., México</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i class="fab fa-whatsapp text-oro text-base"></i>
+                                <div>
+                                    <strong class="font-semibold">WhatsApp:</strong>
+                                    <a href="https://wa.me/528445607182" target="_blank" class="text-bronce underline hover:text-oro font-medium ml-1">+52 844 560 7182</a>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i class="fab fa-instagram text-oro text-base"></i>
+                                <div>
+                                    <strong class="font-semibold">Instagram:</strong>
+                                    <a href="https://www.instagram.com/niloluxuryspa/" target="_blank" class="text-bronce underline hover:text-oro font-medium ml-1">@niloluxuryspa</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://www.google.com/maps/place/MEDIKA+Saltillo/@25.4510362,-100.9748589,17z/data=!3m1!4b1!4m6!3m5!1s0x8688139b6b631f7d:0xcbec7f9530a0cf88!8m2!3d25.4510362!4d-100.9748589!16s%2Fg%2F11wb_6n38_?entry=ttu&g_ep=EgoyMDI2MDkwMi4wIKXMDSoASAFQAw%3D%3D"block text-center bg-[#2C1D0C] text-beige px-4 py-3 rounded-xl font-bold hover:bg-oro hover:text-bronce transition-all shadow-md text-xs uppercase tracking-wider">
+                        Ver en Google Maps
+                    </a>
+                </div>
+
+                <!-- Columna 2: Foto Real de la Clínica -->
+                <div class="relative w-full h-[380px] rounded-3xl overflow-hidden shadow-md border border-bronce/10 bg-white">
+                    <img src="https://i.ibb.co/QjxhZrHV/Dise-o-sin-t-tulo-39.png" alt="Instalaciones Nilo Luxury Spa" class="w-full h-full object-cover">
+                    <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-bronce/80 to-transparent p-4 text-center">
+                        <span class="text-beige text-xs font-medium uppercase tracking-wider">Nuestras Instalaciones</span>
+                    </div>
+                </div>
+
+                <!-- Columna 3: Mapa Interactivo -->
+                <div class="relative w-full h-[380px] rounded-3xl overflow-hidden shadow-md border border-bronce/10">
+                    <a href="https://www.google.com/maps/place/MEDIKA+Saltillo/@25.4510362,-100.9748589,17z/data=!3m1!4b1!4m6!3m5!1s0x8688139b6b631f7d:0xcbec7f9530a0cf88!8m2!3d25.4510362!4d-100.9748589!16s%2Fg%2F11wb_6n38_?entry=ttu&g_ep=EgoyMDI2MDkwMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="absolute top-4 left-4 z-10 bg-white text-bronce px-3.5 py-2 rounded-xl shadow-md text-xs font-bold flex items-center gap-2 hover:bg-beige transition-colors">
+                        Abrir en Maps <i class="fas fa-external-link-alt text-[10px]"></i>
+                    </a>
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.493976214555!2d-100.9925!3d25.4485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sMjXCsDI2JzU0LjYiTiAxMDAzNSczMy4wIlc!5e0!3m2!1ses!2smx!4v1620000000000!5m2!1ses!2smx" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-bronce text-beige py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div>
+                <div class="mb-4">
+                    <a href="https://ibb.co/0yr1hC3M" target="_blank">
+                        <img src="https://i.ibb.co/TMtJm458/Dise-o-sin-t-tulo-40.png" alt="Nilo Luxury Spa Logo" class="h-24 w-auto object-contain">
+                    </a>
+                </div>
+                <p class="text-beige/70 text-sm leading-relaxed">
+                    Tu espacio de confianza para el cuidado estético, relajación y bienestar personal.
+                </p>
+            </div>
+            <div>
+                <h4 class="font-serif font-bold text-lg mb-4 text-oro">Ubicación & Contacto</h4>
+                <p class="text-beige/80 text-sm mb-2"><i class="fas fa-map-marker-alt text-oro mr-2"></i> Calle Mariano Abasolo 3791</p>
+                <p class="text-beige/80 text-sm mb-2"><i class="fab fa-whatsapp text-oro mr-2"></i> 844 560 7182</p>
+                <p class="text-beige/80 text-sm"><i class="fas fa-clock text-oro mr-2"></i> Horarios previa cita</p>
+            </div>
+            <div>
+                <h4 class="font-serif font-bold text-lg mb-4 text-oro">Formas de Pago</h4>
+                <p class="text-beige/80 text-sm mb-4">Aceptamos depósito, transferencia, pagos con tarjeta y efectivo.</p>
+                <div class="flex gap-4 text-xl">
+                    <a href="https://wa.me/528445607182" target="_blank" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-oro hover:text-bronce transition-colors" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/niloluxuryspa/" target="_blank" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-oro hover:text-bronce transition-colors" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/p/NILO-luxury-SPA-100091326844384/" target="_blank" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-oro hover:text-bronce transition-colors" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-white/10 mt-12 pt-6 flex flex-col sm:flex-row justify-between items-center text-xs text-beige/50">
+            <p>© 2026 NILO Luxury Spa. Todos los derechos reservados.</p>
+            <p class="mt-2 sm:mt-0 font-medium">Powered with 🤍 by ROF</p>
+        </div>
+    </footer>
+
+    <!-- Botón Flotante de WhatsApp -->
+    <a href="https://wa.me/528445607182?text=Hola,%20deseo%20agendar%20una%20cita%20en%20Nilo%20Luxury%20Spa" target="_blank" class="fixed bottom-[60px] right-6 z-50 bg-[#25D366] text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center text-3xl hover:scale-110 transition-transform duration-300 focus:outline-none" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+</body>
+</html>
